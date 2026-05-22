@@ -1,0 +1,6 @@
+# Preview/build artifacts
+*_preview.html
+*_build.html
+dist/
+.DS_Store
+Thumbs.db
