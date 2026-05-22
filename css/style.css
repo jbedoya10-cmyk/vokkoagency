@@ -752,6 +752,24 @@ ul, ol { list-style: none; }
   gap: 20px;
 }
 
+.services-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--c-border);
+  flex-wrap: wrap;
+}
+
+.services-footer-text {
+  font-size: 18px;
+  color: var(--c-muted);
+  max-width: 480px;
+  line-height: 1.6;
+}
+
 .service-card {
   background: var(--c-surface);
   border: 1px solid var(--c-border);
