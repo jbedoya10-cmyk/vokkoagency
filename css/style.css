@@ -1100,6 +1100,216 @@ ul, ol { list-style: none; }
   border-radius: 8px;
 }
 
+/* ── Soy Segundas mockup ── */
+.pm-segundas {
+  background: #0D0A1A;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 340px;
+}
+
+.pm-segundas .pm-bar {
+  height: auto;
+  background: #120F22;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.pm-bar-dots {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.pm-bar-dots span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.pm-bar-dots span:nth-child(1) { background: #FF5F57; }
+.pm-bar-dots span:nth-child(2) { background: #FEBC2E; }
+.pm-bar-dots span:nth-child(3) { background: #28C840; }
+
+.pm-bar-url {
+  background: rgba(255,255,255,0.06);
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.3);
+  flex: 1;
+  font-family: monospace;
+}
+
+.pm-search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.pm-search-box {
+  flex: 1;
+  height: 28px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 7px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.pm-search-btn {
+  width: 48px;
+  height: 28px;
+  background: linear-gradient(90deg, rgba(108,59,255,0.5), rgba(255,59,255,0.5));
+  border-radius: 7px;
+}
+
+.pm-vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.pm-vehicle-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pm-vehicle-img {
+  height: 44px;
+  background: linear-gradient(135deg, rgba(108,59,255,0.12), rgba(255,59,255,0.08));
+}
+
+.pm-vehicle-info {
+  padding: 7px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pm-v-title {
+  height: 7px;
+  width: 85%;
+  background: rgba(255,255,255,0.12);
+  border-radius: 4px;
+}
+
+.pm-v-price {
+  height: 6px;
+  width: 60%;
+  background: rgba(108,59,255,0.35);
+  border-radius: 4px;
+}
+
+/* ── Hacienda Sazón mockup ── */
+.pm-sazon {
+  background: #1C0F0A;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 240px;
+}
+
+.pm-sazon .pm-bar {
+  background: #120A06;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.pm-hero-img {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(135deg, #3D1A08 0%, #6B2D0E 50%, #3D1A08 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.pm-hero-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(28,15,10,0.8));
+}
+
+.pm-sazon .pm-body {
+  padding: 14px;
+}
+
+.pm-sazon .pm-title {
+  background: rgba(255,255,255,0.14);
+  height: 10px;
+  width: 70%;
+  margin-bottom: 12px;
+}
+
+.pm-menu-row {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+
+.pm-menu-item {
+  height: 8px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 4px;
+  border-left: 2px solid rgba(200,100,30,0.6);
+  padding-left: 6px;
+}
+
+.pm-menu-item:nth-child(2) { width: 85%; }
+.pm-menu-item:nth-child(3) { width: 70%; }
+
+/* ── Casa Palau Atelier mockup ── */
+.pm-palau {
+  background: #FAFAF8;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 240px;
+}
+
+.pm-palau .pm-body {
+  padding: 14px;
+}
+
+.pm-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.pm-product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pm-product-img {
+  height: 54px;
+  background: linear-gradient(135deg, #F0EDE8, #E8E3DC);
+  border-radius: 6px;
+}
+
+.pm-p-name {
+  height: 7px;
+  width: 80%;
+  background: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+.pm-p-price {
+  height: 6px;
+  width: 50%;
+  background: rgba(0,0,0,0.06);
+  border-radius: 4px;
+}
+
 .projects-cta {
   text-align: center;
 }
