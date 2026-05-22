@@ -201,8 +201,10 @@ ul, ol { list-style: none; }
   font-size: 22px;
   letter-spacing: -0.06em;
   display: inline-flex;
+  align-items: baseline;
   flex-shrink: 0;
-  line-height: 1;
+  line-height: 1.3;
+  padding-bottom: 2px;
 }
 
 .logo-vokko { color: #FFFFFF; }
@@ -211,6 +213,7 @@ ul, ol { list-style: none; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  padding-bottom: 3px;
 }
 
 .nav-links {
@@ -1268,6 +1271,8 @@ ul, ol { list-style: none; }
 .footer-logo {
   font-size: 24px;
   display: inline-flex;
+  align-items: baseline;
+  padding-bottom: 2px;
   margin-bottom: 18px;
 }
 
