@@ -1,0 +1,406 @@
+/* =====================================================
+   VOKKOAGENCY — nosotros.css
+   ===================================================== */
+
+/* ── Hero ── */
+.nos-hero {
+  min-height: 56vh;
+  display: flex;
+  align-items: center;
+  padding: 130px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nos-hero-content {
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+}
+
+.nos-hero-title {
+  font-size: clamp(42px, 6vw, 78px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 1.0;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+
+.nos-hero-desc {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--c-muted);
+  max-width: 500px;
+}
+
+/* ── Fundador ── */
+.nos-founder {
+  padding: 100px 0;
+  background: var(--c-surface);
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+/* Photo */
+.founder-photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.founder-photo-wrap {
+  width: 320px;
+  height: 320px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 2px solid rgba(108,59,255,0.25);
+  box-shadow: 0 0 0 6px rgba(108,59,255,0.06), 0 32px 64px rgba(0,0,0,0.4);
+  position: relative;
+  background: var(--c-surface-2);
+  flex-shrink: 0;
+}
+
+.founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.founder-photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0;
+}
+
+.founder-photo-wrap:not(:has(img[src])) .founder-photo-placeholder,
+.founder-photo-wrap img[src="assets/img/team/juan-bedoya.jpg"]:not([complete]) + .founder-photo-placeholder {
+  opacity: 1;
+}
+
+.founder-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 100px;
+  background: rgba(108,59,255,0.1);
+  color: #A58BFF;
+  border: 1px solid rgba(108,59,255,0.2);
+}
+
+/* Bio */
+.founder-name {
+  font-size: clamp(36px, 4vw, 54px);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.founder-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #A58BFF;
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+}
+
+.founder-desc {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--c-muted);
+  margin-bottom: 16px;
+}
+
+.founder-desc.secondary { color: rgba(139,123,170,0.7); }
+
+/* Founder stats */
+.founder-stats {
+  display: flex;
+  gap: 40px;
+  padding: 28px 0;
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+  margin: 28px 0;
+}
+
+.founder-stat {}
+
+.fstat-value {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.fstat-label {
+  font-size: 12px;
+  color: var(--c-muted);
+  font-weight: 500;
+}
+
+/* Founder social */
+.founder-social {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.founder-social-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.founder-social-link:hover { color: #FFFFFF; }
+
+/* ── Team ── */
+.nos-team {
+  padding: var(--pad-section) 0;
+  background: var(--c-bg);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.team-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--c-border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  border-color: rgba(108,59,255,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.3);
+}
+
+.team-photo-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--c-surface-2);
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+  filter: grayscale(20%);
+}
+
+.team-card:hover .team-photo {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.team-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.team-role {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #A58BFF;
+  margin-bottom: 8px;
+}
+
+.team-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--c-muted);
+}
+
+/* ── Mission ── */
+.nos-mission {
+  padding: var(--pad-section) 0;
+  background: var(--c-surface);
+  border-top: 1px solid var(--c-border);
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.mission-left {
+  position: sticky;
+  top: 100px;
+}
+
+.mission-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mission-item {
+  display: flex;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.mission-item:first-child { padding-top: 0; }
+.mission-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+.mission-number {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: rgba(108,59,255,0.6);
+  flex-shrink: 0;
+  padding-top: 4px;
+  min-width: 24px;
+}
+
+.mission-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.mission-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--c-muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .founder-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .founder-photo-col {
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .founder-photo-wrap {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .mission-left { position: relative; top: auto; }
+}
+
+@media (max-width: 768px) {
+  .nos-hero { min-height: auto; padding: 100px 0 56px; }
+
+  .nos-hero-title { font-size: 38px; }
+
+  .founder-photo-col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .founder-photo-wrap {
+    width: 200px;
+    height: 200px;
+  }
+
+  .founder-stats {
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .founder-social {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .nos-hero-title { font-size: 32px; }
+
+  .founder-photo-wrap { width: 160px; height: 160px; }
+
+  .fstat-value { font-size: 26px; }
+}
