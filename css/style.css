@@ -999,6 +999,26 @@ ul, ol { list-style: none; }
   align-items: center;
   justify-content: center;
   min-height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Themed project-visual backgrounds ── */
+.pv-segundas {
+  background: radial-gradient(ellipse at 75% 50%, rgba(255,107,26,0.18) 0%, transparent 55%),
+              radial-gradient(ellipse at 20% 80%, rgba(108,59,255,0.12) 0%, transparent 50%),
+              linear-gradient(135deg, #0A0818 0%, #140D2A 50%, #0F0A20 100%);
+}
+
+.pv-sazon {
+  background: radial-gradient(ellipse at 60% 40%, rgba(245,158,11,0.2) 0%, transparent 55%),
+              radial-gradient(ellipse at 25% 75%, rgba(180,80,20,0.12) 0%, transparent 50%),
+              linear-gradient(135deg, #100804 0%, #1E0E06 50%, #140A04 100%);
+}
+
+.pv-palau {
+  background: radial-gradient(ellipse at 50% 40%, rgba(255,200,180,0.35) 0%, transparent 60%),
+              linear-gradient(135deg, #F5EDE6 0%, #EDE0D6 50%, #F5EDE6 100%);
 }
 
 .project-card:not(.project-featured) {
@@ -1133,15 +1153,15 @@ ul, ol { list-style: none; }
   border-radius: 8px;
 }
 
-/* ── Soy Segundas mockup (redesigned) ── */
+/* ── Soy Segundas mockup ── */
 .pm-segundas {
-  background: #090712;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: #100D22;
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 14px;
   overflow: hidden;
   width: 100%;
   max-width: 360px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,107,26,0.1);
 }
 
 .pm-bar-dots {
@@ -1164,24 +1184,24 @@ ul, ol { list-style: none; }
 .pm-bar-dots-light span:nth-child(3) { background: #28C840; }
 
 .pm-bar-url {
-  background: rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.1);
   border-radius: 5px;
   padding: 4px 10px;
   font-size: 11px;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.55);
   flex: 1;
   font-family: monospace;
 }
 
 .pm-bar-url-light {
-  background: rgba(0,0,0,0.06);
-  color: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.07);
+  color: rgba(0,0,0,0.4);
 }
 
 .pm-segundas .pm-bar {
   height: auto;
-  background: #0F0C1F;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: #1A1535;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1190,8 +1210,8 @@ ul, ol { list-style: none; }
 
 .pm-bar-dark {
   height: auto;
-  background: #0D0603 !important;
-  border-bottom: 1px solid rgba(255,255,255,0.04) !important;
+  background: #2A1408 !important;
+  border-bottom: 1px solid rgba(245,158,11,0.12) !important;
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
@@ -1200,12 +1220,12 @@ ul, ol { list-style: none; }
 
 /* Soy Segundas — site nav */
 .pm-seg-nav {
-  background: #0C0918;
+  background: #16122E;
   padding: 9px 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
 }
 
 .pm-seg-logo {
@@ -1224,7 +1244,7 @@ ul, ol { list-style: none; }
 .pm-seg-navlink {
   width: 26px;
   height: 5px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.25);
   border-radius: 3px;
 }
 
@@ -1237,40 +1257,40 @@ ul, ol { list-style: none; }
 
 /* Soy Segundas — hero section */
 .pm-car-hero {
-  background: linear-gradient(140deg, #0E0B1C 0%, #1A0D2E 45%, #120920 100%);
-  padding: 14px 16px 12px;
+  background: linear-gradient(140deg, #1C1540 0%, #2E1E60 45%, #1A1240 100%);
+  padding: 16px 16px 14px;
   position: relative;
   overflow: hidden;
-  min-height: 86px;
+  min-height: 90px;
 }
 
 .pm-car-hero::before {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 160px;
-  height: 64px;
-  background: linear-gradient(135deg, transparent 0%, rgba(255,107,26,0.12) 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  bottom: -4px;
+  right: -4px;
+  width: 150px;
+  height: 68px;
+  background: linear-gradient(135deg, transparent 0%, rgba(255,107,26,0.25) 100%);
+  clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .pm-car-hero::after {
   content: '';
   position: absolute;
-  bottom: 6px;
-  right: 16px;
-  width: 120px;
-  height: 30px;
-  background: linear-gradient(90deg, rgba(255,107,26,0.06) 0%, rgba(255,155,58,0.14) 100%);
-  border-radius: 60px 60px 0 0;
-  border-top: 1.5px solid rgba(255,107,26,0.2);
+  bottom: 8px;
+  right: 18px;
+  width: 110px;
+  height: 28px;
+  background: linear-gradient(90deg, rgba(255,107,26,0.12) 0%, rgba(255,155,58,0.3) 100%);
+  border-radius: 55px 55px 0 0;
+  border-top: 2px solid rgba(255,107,26,0.45);
 }
 
 .pm-car-title {
   width: 72%;
   height: 13px;
-  background: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.75);
   border-radius: 6px;
   margin-bottom: 8px;
 }
@@ -1278,7 +1298,7 @@ ul, ol { list-style: none; }
 .pm-car-sub {
   width: 52%;
   height: 8px;
-  background: rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.3);
   border-radius: 4px;
   margin-bottom: 12px;
 }
@@ -1295,16 +1315,16 @@ ul, ol { list-style: none; }
   display: flex;
   gap: 6px;
   padding: 9px 14px;
-  background: #0B0918;
-  border-top: 1px solid rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  background: #14112A;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
 }
 
 .pm-seg-filter {
   flex: 1;
   height: 22px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
   border-radius: 6px;
 }
 
@@ -1322,19 +1342,19 @@ ul, ol { list-style: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 12px 14px 14px;
-  background: #0C0919;
+  background: #12102A;
 }
 
 .pm-seg-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .pm-seg-car-img {
   height: 48px;
-  background: linear-gradient(140deg, #1A0F2E 0%, #2D1A50 55%, #1A0F2E 100%);
+  background: linear-gradient(140deg, #2A1845 0%, #422A70 55%, #2A1845 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1347,16 +1367,16 @@ ul, ol { list-style: none; }
   transform: translateX(-50%);
   width: 78%;
   height: 20px;
-  background: rgba(255,107,26,0.1);
+  background: rgba(255,107,26,0.25);
   border-radius: 50% 50% 0 0;
 }
 
 .pm-seg-car-img-2 {
-  background: linear-gradient(140deg, #0A1A2E 0%, #0E2844 55%, #0A1A2E 100%);
+  background: linear-gradient(140deg, #0D2A42 0%, #154066 55%, #0D2A42 100%);
 }
 
 .pm-seg-car-img-3 {
-  background: linear-gradient(140deg, #1A1A0A 0%, #2E2E10 55%, #1A1A0A 100%);
+  background: linear-gradient(140deg, #2A2A0D 0%, #454510 55%, #2A2A0D 100%);
 }
 
 .pm-seg-card-info {
@@ -1366,7 +1386,7 @@ ul, ol { list-style: none; }
 .pm-seg-car-name {
   width: 85%;
   height: 6px;
-  background: rgba(255,255,255,0.13);
+  background: rgba(255,255,255,0.55);
   border-radius: 3px;
   margin-bottom: 4px;
 }
@@ -1374,7 +1394,7 @@ ul, ol { list-style: none; }
 .pm-seg-car-year {
   width: 55%;
   height: 5px;
-  background: rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.25);
   border-radius: 3px;
   margin-bottom: 5px;
 }
@@ -1382,29 +1402,29 @@ ul, ol { list-style: none; }
 .pm-seg-car-price {
   width: 65%;
   height: 7px;
-  background: linear-gradient(90deg, rgba(255,107,26,0.55), rgba(255,155,58,0.55));
+  background: linear-gradient(90deg, #FF6B1A, #FF9B3A);
   border-radius: 3px;
 }
 
-/* ── Hacienda Sazón mockup (redesigned) ── */
+/* ── Hacienda Sazón mockup ── */
 .pm-sazon {
-  background: #120806;
-  border: 1px solid rgba(255,255,255,0.07);
+  background: #1E0F06;
+  border: 1px solid rgba(255,180,50,0.15);
   border-radius: 14px;
   overflow: hidden;
   width: 100%;
   max-width: 260px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(245,158,11,0.08);
 }
 
 /* Sazón — site nav */
 .pm-saz-nav {
-  background: #160A05;
+  background: #261206;
   padding: 9px 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(245,158,11,0.1);
 }
 
 .pm-saz-logo {
@@ -1422,14 +1442,14 @@ ul, ol { list-style: none; }
 .pm-saz-navlink {
   width: 20px;
   height: 5px;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.25);
   border-radius: 3px;
 }
 
 /* Sazón — hero food image */
 .pm-saz-hero {
-  height: 88px;
-  background: linear-gradient(160deg, #3D1A06 0%, #7A3510 40%, #4A1E08 70%, #2A0E04 100%);
+  height: 92px;
+  background: linear-gradient(160deg, #6B2D0A 0%, #A84412 40%, #7A3510 70%, #3D1A06 100%);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1440,11 +1460,11 @@ ul, ol { list-style: none; }
 .pm-saz-hero::before {
   content: '';
   position: absolute;
-  top: 10px;
-  right: 16px;
-  width: 52px;
-  height: 52px;
-  background: radial-gradient(circle, rgba(245,158,11,0.25) 0%, rgba(217,119,6,0.1) 55%, transparent 80%);
+  top: 8px;
+  right: 14px;
+  width: 56px;
+  height: 56px;
+  background: radial-gradient(circle, rgba(245,158,11,0.5) 0%, rgba(217,119,6,0.25) 55%, transparent 80%);
   border-radius: 50%;
 }
 
@@ -1452,7 +1472,7 @@ ul, ol { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(22,10,5,0.9) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(30,15,6,0.85) 0%, transparent 50%);
 }
 
 .pm-saz-hero-text {
@@ -1463,7 +1483,7 @@ ul, ol { list-style: none; }
 .pm-saz-hero-title {
   width: 82px;
   height: 9px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.92);
   border-radius: 4px;
   margin-bottom: 5px;
 }
@@ -1471,7 +1491,7 @@ ul, ol { list-style: none; }
 .pm-saz-hero-sub {
   width: 56px;
   height: 6px;
-  background: rgba(245,158,11,0.75);
+  background: #F59E0B;
   border-radius: 3px;
 }
 
@@ -1480,27 +1500,27 @@ ul, ol { list-style: none; }
   display: flex;
   gap: 6px;
   padding: 9px 14px;
-  background: #140908;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  background: #200E05;
+  border-bottom: 1px solid rgba(245,158,11,0.1);
 }
 
 .pm-saz-cat {
   height: 18px;
   border-radius: 9px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
   flex: 1;
 }
 
 .pm-saz-cat.active {
-  background: linear-gradient(90deg, rgba(217,119,6,0.28), rgba(245,158,11,0.28));
-  border-color: rgba(245,158,11,0.3);
+  background: linear-gradient(90deg, rgba(217,119,6,0.5), rgba(245,158,11,0.5));
+  border-color: rgba(245,158,11,0.6);
 }
 
 /* Sazón — food cards */
 .pm-saz-body {
   padding: 11px 14px 14px;
-  background: #120806;
+  background: #1E0F06;
 }
 
 .pm-saz-foodgrid {
@@ -1511,21 +1531,21 @@ ul, ol { list-style: none; }
 }
 
 .pm-saz-foodcard {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,180,50,0.06);
+  border: 1px solid rgba(245,158,11,0.15);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .pm-saz-food-img {
   height: 44px;
-  background: radial-gradient(circle at 45% 45%, rgba(217,119,6,0.3) 0%, rgba(151,73,12,0.2) 55%, transparent 80%),
-              linear-gradient(135deg, #2A1206 0%, #3D1A08 100%);
+  background: radial-gradient(circle at 45% 45%, rgba(217,119,6,0.55) 0%, rgba(151,73,12,0.35) 55%, transparent 80%),
+              linear-gradient(135deg, #3D1A08 0%, #5A2A0C 100%);
 }
 
 .pm-saz-food-img-2 {
-  background: radial-gradient(circle at 55% 40%, rgba(180,80,20,0.35) 0%, rgba(100,45,10,0.2) 55%, transparent 80%),
-              linear-gradient(135deg, #241008 0%, #381A0A 100%);
+  background: radial-gradient(circle at 55% 40%, rgba(180,80,20,0.6) 0%, rgba(100,45,10,0.35) 55%, transparent 80%),
+              linear-gradient(135deg, #381508 0%, #522010 100%);
 }
 
 .pm-saz-food-info {
@@ -1535,7 +1555,7 @@ ul, ol { list-style: none; }
 .pm-saz-food-name {
   width: 76%;
   height: 6px;
-  background: rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.55);
   border-radius: 3px;
   margin-bottom: 4px;
 }
@@ -1543,7 +1563,7 @@ ul, ol { list-style: none; }
 .pm-saz-food-price {
   width: 50%;
   height: 6px;
-  background: linear-gradient(90deg, rgba(217,119,6,0.6), rgba(245,158,11,0.6));
+  background: linear-gradient(90deg, #D97706, #F59E0B);
   border-radius: 3px;
 }
 
@@ -1554,15 +1574,15 @@ ul, ol { list-style: none; }
   border-radius: 8px;
 }
 
-/* ── Casa Palau Atelier mockup (redesigned) ── */
+/* ── Casa Palau Atelier mockup ── */
 .pm-palau {
   background: #FAFAF8;
-  border: 1px solid rgba(0,0,0,0.07);
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 14px;
   overflow: hidden;
   width: 100%;
   max-width: 260px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.25), 0 0 0 1px rgba(185,148,60,0.15);
 }
 
 /* Palau — browser bar */
