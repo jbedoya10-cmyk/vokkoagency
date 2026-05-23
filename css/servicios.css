@@ -2,22 +2,6 @@
    VOKKOAGENCY — servicios.css
    ===================================================== */
 
-/* ── Active nav link ── */
-.nav-active {
-  color: #FFFFFF !important;
-  position: relative;
-}
-.nav-active::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--gradient);
-  border-radius: 2px;
-}
-
 /* ── Hero ── */
 .svc-hero {
   min-height: 72vh;

@@ -222,28 +222,24 @@
   transform: translateY(-2px);
 }
 
-/* Gradient initials avatar */
-.team-avatar {
+/* Team photo */
+.team-photo-wrap {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
+  overflow: hidden;
   flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,0.12);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border: 2px solid rgba(108,59,255,0.3);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
-.av-vr { background: linear-gradient(135deg, #6C3BFF 0%, #FF3BFF 100%); }
-.av-sm { background: linear-gradient(135deg, #3B5BDB 0%, #6C3BFF 100%); }
-.av-co { background: linear-gradient(135deg, #0ABFA3 0%, #3B5BDB 100%); }
-.av-az { background: linear-gradient(135deg, #9B4DCA 0%, #2D1080 100%); }
-.av-lj { background: linear-gradient(135deg, #FF6B6B 0%, #FF3BFF 100%); }
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 
 .team-info {
   display: flex;
