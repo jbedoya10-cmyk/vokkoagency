@@ -245,6 +245,21 @@ ul, ol { list-style: none; }
 }
 .nav-links a:hover { color: #FFFFFF; }
 
+.nav-links a.nav-active {
+  color: #FFFFFF;
+  position: relative;
+}
+.nav-links a.nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
 .nav-actions { flex-shrink: 0; }
 
 .nav-hamburger {
